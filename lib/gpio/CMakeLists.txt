@@ -10,3 +10,8 @@ target_sources(QEI PRIVATE src/QEI.cpp)
 target_include_directories(QEI PUBLIC include)
 target_include_directories(QEI PUBLIC Encoder)
 target_set_mbed_dependency(QEI)
+
+add_library(LimitSwitch STATIC)
+target_sources(LimitSwitch PRIVATE src/LimitSwitch.cpp)
+target_include_directories(LimitSwitch PUBLIC include)
+target_set_mbed_dependency(LimitSwitch)
